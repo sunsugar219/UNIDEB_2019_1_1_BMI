@@ -5,7 +5,7 @@ Követelmény specifikáció
 Mivel programtervező informatikusként ülő munkát végzünk, ezért kiemelt 
 fontosságú, hogy külön figyelmet fordítsunk az egészséges életmódra.
 Ennek része az is, hogy a súlyunkat folyamatosan ellenőrizzük, és megelőzzük
-az elhízást. Ennek nyomon követésére szolgál a BMI kalkulátorunk, amely 
+az elhízást. Ennek nyomon követésére szükségünk lenne egy BMI kalkulátorra, amely 
 a nem, magasság és súly alapján kiszámolja és kiértékeli a felhasználó
 BMI indexét.
 
@@ -14,25 +14,25 @@ BMI indexét.
 esetleg papíron történik, ami nem biztosít objektív értékelést.
 
 3. Vágyálom rendszer
--hordozhatóság: Olyan rendszert kívánunk létrehozni, amely biztosítja, hogy bárhol,
-bármikor ellenőrizhessük, hogy a súlyunk egészséges tartományban van-e. Ezt mobil
-eszközökre történő fejlesztéssel a legkézenfekvőbb megvalósítani.
+-hordozhatóság: Olyan rendszerre van szükségünk, amely biztosítja, hogy bárhol,
+bármikor ellenőrizhessük, hogy a súlyunk egészséges tartományban van-e. Ezt 
+lehetőleg mobil eszközökön szeretnénk megvalósítani.
 -hatékonyság: Fontos, hogy a program gyors kiértékelést mutasson, és ne csupán 
 egy számot jelenítsen meg, hanem azt értékelje is ki.
--újrahasznosíthatóság: Olyan program fejlesztése a célunk, amelyet később akár 
+-újrahasznosíthatóság: Olyan programra van szükségünk, amelyet később akár 
 webes, vagy egyéb felületen is fel lehet használni részben vagy egészben.
 
 4. Jelenlegi folyamatok
 -hordozhatóság: Jelenleg számológép és képlet segítségével számolható ki
 objektív értékelés a testsúly nyomonkövetésére.
 -hatékonyság: Ennek olyan alacsony a hatékonysága, hogy az emberek nagyon
-ki százaléka használja a módszert.
+kis százaléka használja a módszert.
 
 5. Igényelt üzleti feladatok
 -hordozhatóság: Fel kell készülnünk arra, hogy globálisan minél szélesebb körben
 tegyük elérhetővé az alkalmazást.
 -hatékonyság: Intuitív felhasználói felület létrehozása elengedhetetlen, hogy
 minél egyszerűbben és gyorsabban adjon a program értékelhető eredményt.
--újrahasznosíthatóság: Olyan programkód megírása a célunk, amely könnyen értelmezhető
+-újrahasznosíthatóság: A program informatikai oldalról legyen könnyen értelmezhető
 és egy újabb programban könnyen újrahasznosítható.
 
