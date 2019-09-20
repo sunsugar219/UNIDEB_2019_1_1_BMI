@@ -1,4 +1,4 @@
-BMI projekt
+﻿BMI projekt
 Követelmény specifikáció
 
 1. Vezetői összefoglaló
@@ -27,6 +27,10 @@ webes, vagy egyéb felületen is fel lehet használni részben vagy egészben.
 objektív értékelés a testsúly nyomonkövetésére.
 -hatékonyság: Ennek olyan alacsony a hatékonysága, hogy az emberek nagyon
 kis százaléka használja a módszert.
+-bővíthetőség: A program jelenleg csak a testtömeg indexet mutatja a
+felhasználóknak. Tovább lehet fejleszteni a programot, úgy hogy az 
+eredménytől függően tanácsokat, tippeket adjon hogy hogyan lehetünk 
+egészségesebbek.
 
 5. Igényelt üzleti feladatok
 -hordozhatóság: Fel kell készülnünk arra, hogy globálisan minél szélesebb körben
