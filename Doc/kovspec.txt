@@ -2,6 +2,12 @@ BMI projekt
 Követelmény specifikáció
 
 1. Vezetői összefoglaló
+Mivel programtervező informatikusként ülő munkát végzünk, ezért kiemelt 
+fontosságú, hogy külön figyelmet fordítsunk az egészséges életmódra.
+Ennek része az is, hogy a súlyunkat folyamatosan ellenőrizzük, és megelőzzük
+az elhízást. Ennek nyomon követésére szolgál a BMI kalkulátorunk, amely 
+a nem, magasság és súly alapján kiszámolja és kiértékeli a felhasználó
+BMI indexét.
 
 2. Jelenlegi helyzet
 
