@@ -2,12 +2,54 @@ BMI projekt
 Funkcionális specifikáció
 
 1. Vezetői összefoglaló
+Mivel programtervező informatikusként ülő munkát végzünk, ezért kiemelt 
+fontosságú, hogy külön figyelmet fordítsunk az egészséges életmódra.
+Ennek része az is, hogy a súlyunkat folyamatosan ellenőrizzük, és megelőzzük
+az elhízást. Ennek nyomon követésére szolgál a BMI kalkulátorunk, amely 
+a nem, magasság és súly paraméterek alapján kiszámolja és kiértékeli a 
+felhasználó BMI indexét egy Android alkalmazásban.
 
 2. Jelenlegi helyzet
+-hatékonyság: Jelenleg a testsúly nyomonkövetése általában mérleg és 
+tükör segítségével, esetleg papíron történik, automatizálás nélkül, 
+ami így nem biztosít sem azonnali, sem objektív értékelést. 
 
 3. Vágyálom rendszer
+-hordozhatóság: Olyan rendszert kívánunk létrehozni, amely biztosítja, 
+hogy bárhol, bármikor ellenőrizhessük, hogy a súlyunk egészséges 
+tartományban van-e. Ezt Android eszközökre történő fejlesztéssel a 
+legkézenfekvőbb megvalósítani, biztosítva a lokációhoz történő nyelvi 
+alkalmazkodást.
+-hatékonyság: Fontos, hogy a program gyors kiértékelést mutasson, és 
+ne csupán egy számot jelenítsen meg, hanem a BMI index értékével 
+visszatérő függvényre épüljön egy azt kiértékelő függvény is.
+-újrahasznosíthatóság: Olyan program fejlesztése a célunk, amelynek 
+a kódját később akár webes, vagy egyéb felületen is fel lehet használni 
+részben vagy egészben. Ezért választottuk Kotlin nyelv helyett a 
+Java-t az applikáció logikájának megvalósításához.
 
 4. Jelenlegi folyamatok
+-hordozhatóság: Jelenleg számológép és képlet (BMI=testsúly/testmagasság^2, 
+kg/m^2) segítségével számolható ki objektív értékelés a testsúly 
+nyomonkövetésére.
+-hatékonyság: Ennek olyan alacsony a hatékonysága, és maga a képlet 
+annyira szűk körben ismert, hogy az emberek nagyon kis százaléka 
+használja a folyamatot. Akik pedig ismerik a kiszámítás módját, 
+ők általában BMI index jelentésével is tisztában vannak.
 
 5. Igényelt üzleti feladatok
+-hordozhatóság: Fel kell készülnünk arra, hogy globálisan minél 
+szélesebb körben tegyük elérhetővé az alkalmazást. Ehhez a 
+nyelvterületenként változó szövegeket egy Strings.xml file-ban fogjuk 
+tárolni, és onnan előhívni az Android eszköz nyelvi beállításaitól 
+függően.
+-hatékonyság: Intuitív felhasználói felület létrehozása elengedhetetlen, 
+hogy minél egyszerűbben és gyorsabban adjon a program értékelhető 
+eredményt. Ehhez RadioGroup-ra és EditText Fieldekre lesz szükség, 
+esetleg segítő szöveggel ellátva.
+-újrahasznosíthatóság: Olyan programkód megírása a célunk, amely könnyen 
+értelmezhető és egy újabb programban könnyen újrahasznosítható. Ennek 
+érdekében jól olvasható, megfelelő megjegyzésekkel ellátott, rendezett 
+programkód megírása a célunk. Az applikáció logikáját Java nyelven 
+fejlesztjük majd Kotlin helyett ebből a célból.
 
