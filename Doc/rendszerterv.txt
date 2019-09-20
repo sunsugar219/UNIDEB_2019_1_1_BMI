@@ -1,0 +1,59 @@
+BMI Projekt
+Rendszerterv
+
+A rendszer célja
+Mivel programtervező informatikusként ülő munkát végzünk, ezért kiemelt 
+fontosságú, hogy külön figyelmet fordítsunk az egészséges életmódra.
+Ennek része az is, hogy a súlyunkat folyamatosan ellenőrizzük, és megelőzzük
+az elhízást. Ennek nyomon követésére szolgál a BMI kalkulátorunk, amely 
+a nem, magasság és súly paraméterek alapján kiszámolja és kiértékeli a 
+felhasználó BMI indexét egy Android alkalmazásban.
+
+Projekt terv
+oProjektszerepkörök, felelősségek
+oProjektmunkások és felelősségeik
+oÜtemterv
+oMérföldkövek
+
+Üzleti folyamatok modellje
+oÜzleti szereplők
+oÜzleti folyamatok
+oÜzleti entitások
+
+Követelmények
+oFunkcionáliskövetelmények
+oNemfunkcionáliskövetelmények
+oTörvényi előírások, szabványok
+
+Funkcionális terv
+oRendszerszereplők
+oRendszerhasználati esetek és lefutásaik
+oHatárosztályokoMenü-hierarchiák
+oKépernyőtervek
+
+Fizikai környezet
+oVásárolt softwarekomponensek és külső rendszerek
+oHardver és hálózatitopológia
+oFizikai alrendszerek
+oFejlesztő eszközök
+oKeretrendszer (pl. Spring)
+
+Absztrakt domain modell
+oDomain specifikáció, fogalmak
+oAbsztrakt komponensek, ezek kapcsolatai
+
+Architekturális terv
+oEgy architekturális tervezési minta (pl. MVC, 3-rétegű alkalmazás, ...)
+oAz alkalmazás rétegei, fő komponensei, ezek kapcsolatai
+oVáltozások kezelése
+oRendszer bővíthetősége
+oBiztonsági funkciók
+
+Implementációs terv
+oPerzisztencia-osztályok
+oÜzleti logika osztályai
+oKliensoldal osztályai
+
+Tesztterv
+Telepítési terv
+Karbantartási terv
