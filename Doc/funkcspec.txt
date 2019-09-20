@@ -1,4 +1,4 @@
-BMI projekt
+﻿BMI projekt
 Funkcionális specifikáció
 
 1. Vezetői összefoglaló
@@ -13,6 +13,11 @@ felhasználó BMI indexét egy Android alkalmazásban.
 -hatékonyság: Jelenleg a testsúly nyomonkövetése általában mérleg és 
 tükör segítségével, esetleg papíron történik, automatizálás nélkül, 
 ami így nem biztosít sem azonnali, sem objektív értékelést. 
+-elérhetőség: a képlet interneten elérhető, tehát ha az illető éppen
+olyan helyzetben akarja kiszámolni a BMI indexét, ahol nem áll rendelkezésre
+intenetkapcsolat, és nem tudja a képletet, akkor nem lesz képes kiszámolni 
+azt.
+
 
 3. Vágyálom rendszer
 -hordozhatóság: Olyan rendszert kívánunk létrehozni, amely biztosítja, 
@@ -27,6 +32,11 @@ visszatérő függvényre épüljön egy azt kiértékelő függvény is.
 a kódját később akár webes, vagy egyéb felületen is fel lehet használni 
 részben vagy egészben. Ezért választottuk Kotlin nyelv helyett a 
 Java-t az applikáció logikájának megvalósításához.
+-kompatibilitás: A tervezett redszer Android 6.0 (Marshmallow) 
+rendszert használó eszközökkel lesz kompatibilis, egyéb rendszer-
+követelmények nem állnak fent.
+-elérhetőség: a rendszer Play áruázban lesz ingyenesen elérhető
+reklámokkal, fizetős szolgáltatásként ezek eltávolíthatóak lesznek.
 
 4. Jelenlegi folyamatok
 -hordozhatóság: Jelenleg számológép és képlet (BMI=testsúly/testmagasság^2, 
@@ -36,6 +46,8 @@ nyomonkövetésére.
 annyira szűk körben ismert, hogy az emberek nagyon kis százaléka 
 használja a folyamatot. Akik pedig ismerik a kiszámítás módját, 
 ők általában BMI index jelentésével is tisztában vannak.
+-kompatibilitás: A jelenlegi a BMI értéket kiszámító eljárás papírral,
+ceruzával és számológéppel kompatibilis.
 
 5. Igényelt üzleti feladatok
 -hordozhatóság: Fel kell készülnünk arra, hogy globálisan minél 
@@ -52,4 +64,6 @@ esetleg segítő szöveggel ellátva.
 érdekében jól olvasható, megfelelő megjegyzésekkel ellátott, rendezett 
 programkód megírása a célunk. Az applikáció logikáját Java nyelven 
 fejlesztjük majd Kotlin helyett ebből a célból.
+-karbantarthatóság: A rendszer egyszerűsége miatt a kész terméket nem kell
+módosítani, esetleges igény szerint viszont bővíthető lesz.
 

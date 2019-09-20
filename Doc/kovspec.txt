@@ -12,6 +12,8 @@ BMI indexét.
 2. Jelenlegi helyzet
 -hatékonyság: Jelenleg a testsúly nyomonkövetése mérleg és tükör segítségével,
 esetleg papíron történik, ami nem biztosít objektív értékelést.
+-elérhetőség: a képlet interneten elérhető, annak hiányában az nem 
+kiszámítható ezen ismeret nélkül.
 
 3. Vágyálom rendszer
 -hordozhatóság: Olyan rendszerre van szükségünk, amely biztosítja, hogy bárhol,
@@ -21,6 +23,11 @@ lehetőleg mobil eszközökön szeretnénk megvalósítani.
 egy számot jelenítsen meg, hanem azt értékelje is ki.
 -újrahasznosíthatóság: Olyan programra van szükségünk, amelyet később akár 
 webes, vagy egyéb felületen is fel lehet használni részben vagy egészben.
+-kompatibilitás: A tervezett redszer Android rendszert használó 
+eszközökkel lesz kompatibilis, egyéb operációs rendszerek támogatása 
+nincs tervezve.
+-elérhetőség: A rendszer ingyenesen elérhető lesz a Play áruházban reklámokkal,
+fizetős szolgáltatásokkal.
 
 4. Jelenlegi folyamatok
 -hordozhatóság: Jelenleg számológép és képlet segítségével számolható ki
@@ -31,6 +38,8 @@ kis százaléka használja a módszert.
 felhasználóknak. Tovább lehet fejleszteni a programot, úgy hogy az 
 eredménytől függően tanácsokat, tippeket adjon hogy hogyan lehetünk 
 egészségesebbek.
+-kompatibilitás: A jelenlegi rendszer papírral, tollal és számológéppel
+kompatbilis.
 
 5. Igényelt üzleti feladatok
 -hordozhatóság: Fel kell készülnünk arra, hogy globálisan minél szélesebb körben
