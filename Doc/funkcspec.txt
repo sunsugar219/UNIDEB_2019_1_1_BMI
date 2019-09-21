@@ -17,9 +17,27 @@ ami így nem biztosít sem azonnali, sem objektív értékelést.
 olyan helyzetben akarja kiszámolni a BMI indexét, ahol nem áll rendelkezésre
 intenetkapcsolat, és nem tudja a képletet, akkor nem lesz képes kiszámolni 
 azt.
+-helyesség: Pillanatnyilag a BMI index kiszámításában nem beszélhetünk helyességről, 
+mert a papírra bármit írhatunk,  az nem jelzi nekünk, hogy nem helyes a leírt adat. 
+Szükségünk van egy kalkulátor fejlesztésére, ami ezt néhány perc alatt kiszámolja és 
+kiértékeli. 
 
 
 3. Vágyálom rendszer
+-helyesség: Mivel egy kalkulátorról beszélünk, fontos ennek helyessége, ami szükséges 
+adatok beírásánál jelentkezik, mint például a magasság és súly megadása. Ezeknél pedig 
+elengedhetetlen hibás adat megadása, tehát nem adhatunk meg például szöveges adatot. 
+Ezért szükséges bizonyos függvények bevezetése, amelyek ellenőrzik a beírt adatok 
+helyességét.
+-használhatóság: Egy olyan program kidolgozására van szükség, ami könnyedén használható 
+bárhol és bármikor. Tehát egy mindennapokban használt eszközre fejlesztjük, ami nem más 
+mint a mobiltelefon. A mobiltelefon manapság már egy elengedhetetlen eszköz, hiszen 
+vezeték nélküli kapcsolódás nélkül lehet használni bármikor, és bárhol illetve azonnali 
+kiértékelést nyújt a kliens számára.
+-megbízhatóság: Bármilyen szoftvernél fontos a megbízhatóság. Egy kalkulátornál a pontos 
+számításban jelenik meg, illetve a helyes kiértékelésnél. Ezért fontos a képlet, illetve 
+a pontos számolás bevezetése a programban. E mellett pedig a kiértékelés megbízhatóságára 
+is törekednünk kell, ami nemtől, kortól és a kiszámolt BMI indextől függ.
 -hordozhatóság: Olyan rendszert kívánunk létrehozni, amely biztosítja, 
 hogy bárhol, bármikor ellenőrizhessük, hogy a súlyunk egészséges 
 tartományban van-e. Ezt Android eszközökre történő fejlesztéssel a 
@@ -39,6 +57,10 @@ követelmények nem állnak fent.
 reklámokkal, fizetős szolgáltatásként ezek eltávolíthatóak lesznek.
 
 4. Jelenlegi folyamatok
+-használhatóság: Nagyon kevés embert foglalkoztat a BMI index kiszámolása, 
+ezért inkább hanyagolják az egészséges életmódót és a testsúly szabályozását. 
+Tehát egy kalkulátor megkönnyítené az emberek dolgát, és még időt is megspórolnak. 
+A mobiltelefon segítségével rövid időn belül eredménnyel tér vissza a szoftver.
 -hordozhatóság: Jelenleg számológép és képlet (BMI=testsúly/testmagasság^2, 
 kg/m^2) segítségével számolható ki objektív értékelés a testsúly 
 nyomonkövetésére.
@@ -50,6 +72,11 @@ használja a folyamatot. Akik pedig ismerik a kiszámítás módját,
 ceruzával és számológéppel kompatibilis.
 
 5. Igényelt üzleti feladatok
+-helyesség: Nem megengedett a hibás adatok beírása, ezért bizonyos függvények
+bevezetésére lesz szükség, ami ellenőrzi az adatok helyességét.
+-használhatóság: Könnyen használható szoftver szükséges, ami bármikor, bárhol 
+használható, és pontos információkkal szolgál, a kiegyensúlyozott életmódhoz, 
+ezért Androidos operációs rendszerre fejlesztjük.
 -hordozhatóság: Fel kell készülnünk arra, hogy globálisan minél 
 szélesebb körben tegyük elérhetővé az alkalmazást. Ehhez a 
 nyelvterületenként változó szövegeket egy Strings.xml file-ban fogjuk 
