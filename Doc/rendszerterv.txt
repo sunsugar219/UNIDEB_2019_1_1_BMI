@@ -14,7 +14,7 @@ Projekt terv
 csak szoftver fejlesztők dolgoznak a projekten, egyéb szerepkört a projekt nem igényel.
 -Projektmunkások és felelősségeik:
 Az alábbi szoftver fejlesztők munkájára van szükség :
-Sóhajda Alex: UI
+Sohajda Alex: UI
 Török Iza: Bemenetet kezelő függvények
 Németh Máté : Kimenetet kezelő függvények
 Hódi Zsuzsa : projekt összeállítása, resource kezelés, hordozhatóság
@@ -64,7 +64,14 @@ Funkcionális terv
 -Rendszerszereplők
 -Rendszerhasználati esetek és lefutásaik
 -HatárosztályokoMenü-hierarchiák
--Képernyőtervek
+-Képernyőtervek: A felhasználói felületet egyszerűen, átláthatóan kívánom
+megoldani.A program nem követel bonyolultabb felhasználó felületet.
+A képernyőt két részre kívánom osztani.Az első felében az adatok bevitele, 
+míg a második felében a kiszámolt eredményt íratjuk ki a képernyőre.Egy radiobutton
+segítségével választhatjuk ki a nemüket, alatta pedig szövegmezőkben adhatjuk
+meg a magasságunkat centiméterben és a súlyunkat kilógrammban megadva.
+Ezek az adatok bevitele után a SZÁMOL gombra kattintva a porgram kiítja a képernyő második felére
+az eredményt.Csatolt képen megtekinthető a felhasználó felület terve(BMI_UI_kepepernyoterv.jpg).
 
 Fizikai környezet
 -Vásárolt softwarekomponensek és külső rendszerek
