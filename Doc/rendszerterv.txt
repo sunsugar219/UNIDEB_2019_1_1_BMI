@@ -10,44 +10,78 @@ a nem, magasság és súly paraméterek alapján kiszámolja és kiértékeli a
 felhasználó BMI indexét egy Android alkalmazásban.
 
 Projekt terv
-oProjektszerepkörök, felelősségek
-oProjektmunkások és felelősségeik
-oÜtemterv
-oMérföldkövek
+-Projektszerepkörök, felelősségek:
+csak szoftver fejlesztők dolgoznak a projekten, egyéb szerepkört a projekt nem igényel.
+-Projektmunkások és felelősségeik:
+Az alábbi szoftver fejlesztők munkájára van szükség :
+Sóhajda Alex: UI
+Török Iza: Bemenetet kezelő függvények
+Németh Máté : Kimenetet kezelő függvények
+Hódi Zsuzsa : projekt összeállítása, resource kezelés, hordozhatóság
+-Ütemterv:
+Projekt tervezése: szeptember 23.
+Projekt összeállítása: szeptember 24.
+Resource kezelés : szeptember 25.
+Hordozhatóság: szeptember 29.
+-Mérföldkövek:
+Projektterv elkészítése
+Források előkészítése
+Felhasználói felület elkészítése
+Üzleti logika elkészítése
+Projekt összeállítása
+
 
 Üzleti folyamatok modellje
-oÜzleti szereplők
-oÜzleti folyamatok
-oÜzleti entitások
+-Üzleti szereplők:
+Felhasználó: aki megadja a nemét, magasságát (cm-ben) és a súlyát (kg-ban)
+azért, hogy az alkalmazásunk megadja neki a BMI indexét, és annak a kiértékelését.
+-Üzleti folyamatok: 
+Adatok beolvasása: a felhasználói felületről a felhasználó által megadott adatok
+bevitele az üzleti logika egyik függvényének paramétereként.
+BMI index kiszámítása: kg/m^2 alapján az applikáció kiszámítja a BMI indexet
+a bevitt adatok alapján
+BMI index értékelése: a BMI indexet kategóriákba sorolja, és ez alapján
+kiértékeli a felhasználó számára érthető módon.
+-Üzleti entitások: 
+RadioGroup: Ennek segítségével választja ki a felhasználó a nemét
+EditText: Ennek segítségével adja meg a felhasználó a magasságát, súlyát
+Button: ennek segítségével viszi be a felhasználó az adatait
 
 Követelmények
-oFunkcionáliskövetelmények
-oNemfunkcionáliskövetelmények
-oTörvényi előírások, szabványok
+-Funkcionális követelmények
+-Nem  funkcionáliskövetelmények
+-Törvényi előírások, szabványok
 
 Funkcionális terv
-oRendszerszereplők
-oRendszerhasználati esetek és lefutásaik
-oHatárosztályokoMenü-hierarchiák
-oKépernyőtervek
+-Rendszerszereplők
+-Rendszerhasználati esetek és lefutásaik
+-HatárosztályokoMenü-hierarchiák
+-Képernyőtervek
 
 Fizikai környezet
-oVásárolt softwarekomponensek és külső rendszerek
-oHardver és hálózatitopológia
-oFizikai alrendszerek
-oFejlesztő eszközök
-oKeretrendszer (pl. Spring)
+-Vásárolt softwarekomponensek és külső rendszerek
+-Hardver és hálózati topológia: Android 6 a minimális elvárt Android verzió az eszközökön (SDK 21)
+-Fizikai alrendszerek
+-Fejlesztő eszközök: Android Studio 3.5
+-Keretrendszer (pl. Spring)
 
 Absztrakt domain modell
-oDomain specifikáció, fogalmak
-oAbsztrakt komponensek, ezek kapcsolatai
+-Domain specifikáció, fogalmak
+-Absztrakt komponensek, ezek kapcsolatai
 
 Architekturális terv
-oEgy architekturális tervezési minta (pl. MVC, 3-rétegű alkalmazás, ...)
-oAz alkalmazás rétegei, fő komponensei, ezek kapcsolatai
-oVáltozások kezelése
-oRendszer bővíthetősége
-oBiztonsági funkciók
+-Egy architekturális tervezési minta:3-rétegű alkalmazás az adatbázis réteg nélkül 
+-Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai:
+Rétegek :UI, logikai réteg, adatbázis nem szükséges az alkalmazáshoz 
+Kapcsolataik:a felhasználói felület nevesített nézeteinek azonosítói az R-ben
+kerülnek tárolásra a layout-ot reprezentáló xml fájlból. Ezeket a findViewById 
+függvény köti a Java kódban lévő logikai réteg szereplőihez.
+-Változások kezelése: új Android rendszer, IDE vagy Gradle esetén 
+a Gradle scriptek átírása
+-Rendszer bővíthetősége:  lokációhoz és a  céleszköz méreteihez a resource-okkal 
+kapcsolódik, ezeket az xml file-okat kell bővíteni új céllokáció vagy céleszköz
+esetén
+-Biztonsági funkciók
 
 Implementációs terv
 oPerzisztencia-osztályok
