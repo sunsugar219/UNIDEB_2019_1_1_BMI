@@ -1,4 +1,4 @@
-BMI Projekt
+﻿BMI Projekt
 Rendszerterv
 
 A rendszer célja
@@ -42,10 +42,18 @@ BMI index kiszámítása: kg/m^2 alapján az applikáció kiszámítja a BMI ind
 a bevitt adatok alapján
 BMI index értékelése: a BMI indexet kategóriákba sorolja, és ez alapján
 kiértékeli a felhasználó számára érthető módon.
+Eredmények kiírása: az üzleti logika utolsó lépése tájékoztatja a 
+felhasználót a számított eredményről, és egy, az eredményhez tartozó 
+véletlenszerű javaslatról.
 -Üzleti entitások: 
 RadioGroup: Ennek segítségével választja ki a felhasználó a nemét
 EditText: Ennek segítségével adja meg a felhasználó a magasságát, súlyát
 Button: ennek segítségével viszi be a felhasználó az adatait
+Toast pop-up ablak: ez az ablak informálja a felhasználót, ha helytelen
+adatokat adott meg
+TextView: Ennek segítségével tájékoztatjuk a felhasználót a megadott adatok
+alapján kiszámított BMI indexről, és az ahhoz tartozó röviden megfogalmazott
+véleményről.
 
 Követelmények
 -Funkcionális követelmények
@@ -84,7 +92,7 @@ esetén
 -Biztonsági funkciók
 
 Implementációs terv
-A programban nem bonyolítjuk az osztályokat, ezért szükséges lesz egy fő osztályra, és ezen belül
+A programban nem bonyolítjuk az osztályokat, ezért szükség lesz egy fő osztályra, és ezen belül
 megoldjuk az indokolt alpontokat: 
 -Perzisztencia
 Egy ilyen kalkulátorszerű szoftvernél nem szükséges a perzisztencia viszont jó ha mégis van. 
@@ -109,7 +117,8 @@ index 22.5-nél kisebb, egészséges ha 22.5 és 29 között van, túlsúlyos ha
 extrém túlsúlyos ha 34-nél nagyobb a BMI index értéke. A kiértékelésekhez társulnak bizonyos tanácsok, 
 amik elárulják, hogyan érheted el a kívánt eredményt, és ezáltal hogyan folytass egészséges életmódot.
 A program if-else szerkezetek segítségével hajtja végre a különbőző besorolásba való osztáyozást.
-Ezen belül a kiértékeléshez tartozó tanácsokat switch-case utasítások hajtják végre. 
+Ezen belül a kiértékeléshez tartozó tanácsokat switch-case utasítások hajtják végre, és TextView elemeken
+jelenítődik meg.
 -Kliensoldal
 A kliensoldal az nem más, mint maga az input. Ez az adatok beírását tartalmazza, ami billentyűzetről 
 történik. A BMI index kalkulátornál három adat megadása lényeges a magasság, a testtömeg és a nem. 
