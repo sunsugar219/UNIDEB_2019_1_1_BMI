@@ -84,9 +84,43 @@ esetén
 -Biztonsági funkciók
 
 Implementációs terv
-oPerzisztencia-osztályok
-oÜzleti logika osztályai
-oKliensoldal osztályai
+A programban nem bonyolítjuk az osztályokat, ezért szükséges lesz egy fő osztályra, és ezen belül
+megoldjuk az indokolt alpontokat: 
+-Perzisztencia
+Egy ilyen kalkulátorszerű szoftvernél nem szükséges a perzisztencia viszont jó ha mégis van. 
+Ha a szó jelentését nézzük, ez nem más mint a „tartós fennmaradás”, akkor megértjük, hogy ez 
+valójában mi is az. Perzisztenciára az adatok tárolásánál van szükség, pontosabban amikor a 
+felhasználó beírja a kért adatokat, akkor a program képes ezeket tárolni egy bizonyos ideig. 
+Ha például az utolsó belépés óta nem változott a felhasználó súlya, akkor kiválasztható az eddigi
+érték, ami előző használatkor beírásra került. Ez a felhasználó dolgát könnyíti meg, mert nem
+szükséges újabb adat beírása, csak abban az esetben ha változás történt.
+-Üzleti logika
+Az üzleti logika rétegnek a fő feladata az a folyamatok logikai jellemzése. Ebben az esetben egy 
+kalkulátorról beszélünk, aminek fő feladata a számítás. Minden számolás egy képlet segítségével
+történik, úgy ahogy a BMI index (testtömeg-index) kiszámításához is egy képletre van szükség:
+testtömeg[kg]/magasság[m]^2. Értelemszerűen a képlet alapján a kilogrammban kifejezett testtömeget 
+elosztjuk a méterben kifejezett magasság négyzetével. A művelet elvégzését követően kapunk egy 
+bizonyos értéket és ehhez társul egy kiértékelés is. A testsúlyosztályozási táblázat segítségével
+tárul elénk a megfelelő kiértékelés. Táblázat alapján négy esetünk lehet: alultáplált, egészséges,
+túlsúlyos és extrém túlsúlyos. Ezek értékei a felhasználó nemétől függenek. A nőknél alultáplált 
+ha a BMI index kisebb mint 18.5, egészséges ha  18.5 és 25 között van, túlsúlyos ha 25 és 30 között 
+van és extrém túlsúlyos, ha 30-nál nagyobb a BMI index értéke. A férfiaknál alultáplált ha a BMI 
+index 22.5-nél kisebb, egészséges ha 22.5 és 29 között van, túlsúlyos ha 29 és 34 között van és 
+extrém túlsúlyos ha 34-nél nagyobb a BMI index értéke. A kiértékelésekhez társulnak bizonyos tanácsok, 
+amik elárulják, hogyan érheted el a kívánt eredményt, és ezáltal hogyan folytass egészséges életmódot.
+A program if-else szerkezetek segítségével hajtja végre a különbőző besorolásba való osztáyozást.
+Ezen belül a kiértékeléshez tartozó tanácsokat switch-case utasítások hajtják végre. 
+-Kliensoldal
+A kliensoldal az nem más, mint maga az input. Ez az adatok beírását tartalmazza, ami billentyűzetről 
+történik. A BMI index kalkulátornál három adat megadása lényeges a magasság, a testtömeg és a nem. 
+Ahhoz hogy a lehető legkevesebb adatot legyen szükséges a felhasználónak beírni, létrehozunk egy
+radiobutton-t, aminek segítségével kényelmesen kiválaszthatja a nemét. Így nem adhat meg hibás 
+adatot és csak egy választási lehetőséget választhat ki, mert a program ellenőrzi ezt. Nem választható 
+egyszerre mindkettő. Ez egy logikai értékkel könnyen megoldható, ezért boolean-t használunk és ezáltal 
+megvizsgáljuk, hogy kiválasztásra került-e a felhasználó neme.
+A felhasználó kiválasztja a nemét, beírja a magasságát és a testtömegét, ezekután van egy Button 
+funkció, amivel megtörténik az adatok beolvasása és megtörténik a kiértékelés.
+
 
 Tesztterv
 Telepítési terv
