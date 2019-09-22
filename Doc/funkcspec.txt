@@ -93,4 +93,5 @@ programkód megírása a célunk. Az applikáció logikáját Java nyelven
 fejlesztjük majd Kotlin helyett ebből a célból.
 -karbantarthatóság: A rendszer egyszerűsége miatt a kész terméket nem kell
 módosítani, esetleges igény szerint viszont bővíthető lesz.
+-hibatűrés: A program figyelmeztet az üresen hagyott mezőkre ezzel figyelmeztetve az adott felhasználót, hogy minden bekért adatot adjunk meg. Továbbá az adatokat a lehető legpontosabban vigyük fel a rendszerbe, mert így a program a lehető legpontosabb értékelést tudja adni a felhasználóknak. Az adatok felvitelekor a program ellenőrzi azokat, hogy egy bizonyos értékhatáron belül legyenek.
 
