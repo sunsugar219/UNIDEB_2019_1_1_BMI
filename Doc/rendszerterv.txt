@@ -57,7 +57,7 @@ véleményről.
 
 Követelmények
 -Funkcionális követelmények
--Nem  funkcionáliskövetelmények
+-Nem  funkcionális követelmények
 -Törvényi előírások, szabványok
 
 Funkcionális terv
@@ -89,7 +89,9 @@ a Gradle scriptek átírása
 -Rendszer bővíthetősége:  lokációhoz és a  céleszköz méreteihez a resource-okkal 
 kapcsolódik, ezeket az xml file-okat kell bővíteni új céllokáció vagy céleszköz
 esetén
--Biztonsági funkciók
+-Biztonsági funkciók: A szoftver bizonyos határok között engedi az adatok megadását.
+Ezek egyszerű if feltételek implementálásával megvalósítható. Hálózati biztonságra 
+nincs szükség, mivel internetkapcsolat nem szükséges a használathoz.
 
 Implementációs terv
 A programban nem bonyolítjuk az osztályokat, ezért szükség lesz egy fő osztályra, és ezen belül
@@ -132,5 +134,10 @@ funkció, amivel megtörténik az adatok beolvasása és megtörténik a kiért�
 
 
 Tesztterv
+Az üzleti logika nem igényel komolyabb tesztelést, két a logika két részét kell tesztelni, az egyik
+a BMI-indexet kiszámító algoritmus tesztje, a másik pedig a bmi-értékhez hozzárendelt szöveget teszteli.
 Telepítési terv
+A telepítés az android beépített csomagtelepítővel történik
 Karbantartási terv
+A program karbantartást nem igényel, legfeljebb újabb android verziókkal való kompatibilitási problémák
+merülhetnek fel, azok megoldása szükséges.
