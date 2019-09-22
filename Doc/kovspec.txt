@@ -59,6 +59,7 @@ kis százaléka használja a módszert.
 felhasználóknak. Tovább lehet fejleszteni a programot, úgy hogy az 
 eredménytől függően tanácsokat, tippeket adjon hogy hogyan lehetünk 
 egészségesebbek.
+-hibatűrés: A program az adatok bevitelénél feldolgozza a megadott adatokat és figyelmeztet, ha egy mezőt üresen hagytunk vagy a megadott adatok nem relevánsak.
 -kompatibilitás: A jelenlegi rendszer papírral, tollal és számológéppel
 kompatbilis.
 
