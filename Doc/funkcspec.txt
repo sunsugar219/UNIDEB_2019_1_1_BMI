@@ -94,4 +94,4 @@ fejlesztjük majd Kotlin helyett ebből a célból.
 -karbantarthatóság: A rendszer egyszerűsége miatt a kész terméket nem kell
 módosítani, esetleges igény szerint viszont bővíthető lesz.
 -hibatűrés: A program figyelmeztet az üresen hagyott mezőkre ezzel figyelmeztetve az adott felhasználót, hogy minden bekért adatot adjunk meg. Továbbá az adatokat a lehető legpontosabban vigyük fel a rendszerbe, mert így a program a lehető legpontosabb értékelést tudja adni a felhasználóknak. Az adatok felvitelekor a program ellenőrzi azokat, hogy egy bizonyos értékhatáron belül legyenek.
-
+-bővíthetőség: A program jelenleg csak a testtömeg indexet mutatja. A program tovább fejleszthető a következő módon: A program a kiszámolt adatokkal tovább dolgozhat, a felhasználóknak további tippeket, trükköket adhat, hogy a program használója minél egészségesebb legyen. Például akiknek az indexük magas, azoknak értesítéseket küldeni, hogy a nap folyamán tornázzon. Az étkezés ütemezésében is segíthet, mivel az elhízások egyik fő forrása a rendszertelen étkezés is.
