@@ -10,69 +10,69 @@ a nem, magasság és súly alapján kiszámolja és kiértékeli a felhasználó
 BMI indexét.
 
 2. Jelenlegi helyzet
--hatékonyság: Jelenleg a testsúly nyomonkövetése mérleg és tükör segítségével,
+-Jelenleg a testsúly nyomonkövetése mérleg és tükör segítségével,
 esetleg papíron történik, ami nem biztosít objektív értékelést.
--elérhetőség: a képlet interneten elérhető, annak hiányában az nem 
+-A képlet interneten elérhető, annak hiányában az nem 
 kiszámítható ezen ismeret nélkül.
--helyesség: Pillanatnyilag a BMI index kiszámításában nem beszélhetünk helyességről, 
+-Pillanatnyilag a BMI index kiszámításában nem beszélhetünk helyességről, 
 mert a papírra bármit írhatunk,  az nem jelzi nekünk, hogy nem helyes a leírt adat.
--használhatóság: Jelenlegi használhatóságról nem sokat említhetünk meg, hiszen a BMI 
+-Jelenlegi használhatóságról nem sokat említhetünk meg, hiszen a BMI 
 index kiszámítására számológépet használhatunk, vagy akár papírt és írószert. 
 A különböző kiértékelések pedig interneten olvashatóak.
--megbízhatóság: Egy kalkulátornál a megbízhatóság a számolásban, illetve a kiértékelésben 
+-Egy kalkulátornál a megbízhatóság a számolásban, illetve a kiértékelésben 
 nyilvánul meg. Jelenlegi helyzetben a kézi számolás például nem a legmegbízhatóbb, hiszen 
 könnyen elszámolhatunk, így rossz értéket kapunk, és a kiértékelés is hibás lesz.    
 
 3. Vágyálom rendszer
--helyesség: Mivel egy kalkulátorról beszélünk, fontos ennek helyessége, ami szükséges 
+-Mivel egy kalkulátorról beszélünk, fontos ennek helyessége, ami szükséges 
 adatok beírásánál jelentkezik, mint például a magasság és súly megadása. 
 Ezeknél pedig elengedhetetlen hibás adat megadása, tehát nem adhatunk meg például szöveges 
 adatot.
--használhatóság: Egy olyan program kidolgozására van szükség, ami könnyedén használható 
+-Egy olyan program kidolgozására van szükség, ami könnyedén használható 
 bárhol és bármikor. Tehát egy mindennapokban használt eszközre fejlesztjük, ami nem más 
 mint a mobiltelefon. 
--megbízhatóság: Bármilyen szoftvernél fontos a megbízhatóság. Egy kalkulátornál a 
+-Bármilyen szoftvernél fontos a megbízhatóság. Egy kalkulátornál a 
 pontos számításban jelenik meg, illetve a helyes kiértékelésnél. Ezért elengedhetetlen 
 a képlet, illetve a pontos számolás.
--hordozhatóság: Olyan rendszerre van szükségünk, amely biztosítja, hogy bárhol,
+-Olyan rendszerre van szükségünk, amely biztosítja, hogy bárhol,
 bármikor ellenőrizhessük, hogy a súlyunk egészséges tartományban van-e. Ezt 
 lehetőleg mobil eszközökön szeretnénk megvalósítani.
--hatékonyság: Fontos, hogy a program gyors kiértékelést mutasson, és ne csupán 
+-Fontos, hogy a program gyors kiértékelést mutasson, és ne csupán 
 egy számot jelenítsen meg, hanem azt értékelje is ki.
 -újrahasznosíthatóság: Olyan programra van szükségünk, amelyet később akár 
 webes, vagy egyéb felületen is fel lehet használni részben vagy egészben.
--kompatibilitás: A tervezett redszer Android rendszert használó 
+-A tervezett redszer Android rendszert használó 
 eszközökkel lesz kompatibilis, egyéb operációs rendszerek támogatása 
 nincs tervezve.
--elérhetőség: A rendszer ingyenesen elérhető lesz a Play áruházban reklámokkal,
+-A rendszer ingyenesen elérhető lesz a Play áruházban reklámokkal,
 fizetős szolgáltatásokkal.
 
 4. Jelenlegi folyamatok
--használhatóság: Nagyon kevés embert foglalkoztat a BMI index kiszámolása, ezért inkább 
-hanyagolják az egészséges életmódót és a testsúly szabályozását. Tehát egy kalkulátor 
+-Nagyon kevés embert foglalkoztat a BMI index kiszámolása, ezért inkább 
+hanyagolják az egészséges életmódot és a testsúly szabályozását. Tehát egy kalkulátor 
 megkönnyítené az emberek dolgát, és még időt is spórolnak. 
--hordozhatóság: Jelenleg számológép és képlet segítségével számolható ki
+-Jelenleg számológép és képlet segítségével számolható ki
 objektív értékelés a testsúly nyomonkövetésére.
--hatékonyság: Ennek olyan alacsony a hatékonysága, hogy az emberek nagyon
+-Ennek olyan alacsony a hatékonysága, hogy az emberek nagyon
 kis százaléka használja a módszert.
--bővíthetőség: A program jelenleg csak a testtömeg indexet mutatja a
+-A program jelenleg csak a testtömeg indexet mutatja a
 felhasználóknak. Tovább lehet fejleszteni a programot, úgy hogy az 
 eredménytől függően tanácsokat, tippeket adjon hogy hogyan lehetünk 
 egészségesebbek.
--hibatűrés: A program az adatok bevitelénél feldolgozza a megadott adatokat és figyelmeztet, ha egy mezőt üresen hagytunk vagy a megadott adatok nem relevánsak.
--kompatibilitás: A jelenlegi rendszer papírral, tollal és számológéppel
+-A program az adatok bevitelénél feldolgozza a megadott adatokat és figyelmeztet, ha egy mezőt üresen hagytunk vagy a megadott adatok nem relevánsak.
+-A jelenlegi rendszer papírral, tollal és számológéppel
 kompatbilis.
 
 5. Igényelt üzleti feladatok
--helyesség: A szoftver képes kell legyen az adatok felismerésére, és a hibák kiküszöbölésére.
--használhatóság: Könnyen használható szoftver szükséges, ami bármikor, bárhol használható, 
+-A szoftver képes kell legyen az adatok felismerésére, és a hibák kiküszöbölésére.
+-Könnyen használható szoftver szükséges, ami bármikor, bárhol használható, 
 és pontos információkkal szolgál, a kiegyensúlyozott életmódhoz. 
--megbízhatóság: Megbízható kiértékelésekkel szolgáljon, illetve a pontos számolás is 
+-Megbízható kiértékelésekkel szolgáljon, illetve a pontos számolás is 
 elengedhetetlen egy kalkulátor számára.
--hordozhatóság: Fel kell készülnünk arra, hogy globálisan minél szélesebb körben
+-Fel kell készülnünk arra, hogy globálisan minél szélesebb körben
 tegyük elérhetővé az alkalmazást.
--hatékonyság: Intuitív felhasználói felület létrehozása elengedhetetlen, hogy
+-Intuitív felhasználói felület létrehozása elengedhetetlen, hogy
 minél egyszerűbben és gyorsabban adjon a program értékelhető eredményt.
--újrahasznosíthatóság: A program informatikai oldalról legyen könnyen értelmezhető
+-A program informatikai oldalról legyen könnyen értelmezhető
 és egy újabb programban könnyen újrahasznosítható.
 
