@@ -10,88 +10,88 @@ a nem, magasság és súly paraméterek alapján kiszámolja és kiértékeli a
 felhasználó BMI indexét egy Android alkalmazásban.
 
 2. Jelenlegi helyzet
--hatékonyság: Jelenleg a testsúly nyomonkövetése általában mérleg és 
+ Jelenleg a testsúly nyomonkövetése általában mérleg és 
 tükör segítségével, esetleg papíron történik, automatizálás nélkül, 
 ami így nem biztosít sem azonnali, sem objektív értékelést. 
--elérhetőség: a képlet interneten elérhető, tehát ha az illető éppen
+ A képlet interneten elérhető, tehát ha az illető éppen
 olyan helyzetben akarja kiszámolni a BMI indexét, ahol nem áll rendelkezésre
 intenetkapcsolat, és nem tudja a képletet, akkor nem lesz képes kiszámolni 
 azt.
--helyesség: Pillanatnyilag a BMI index kiszámításában nem beszélhetünk helyességről, 
+ Pillanatnyilag a BMI index kiszámításában nem beszélhetünk helyességről, 
 mert a papírra bármit írhatunk,  az nem jelzi nekünk, hogy nem helyes a leírt adat. 
 Szükségünk van egy kalkulátor fejlesztésére, ami ezt néhány perc alatt kiszámolja és 
 kiértékeli. 
 
 
 3. Vágyálom rendszer
--helyesség: Mivel egy kalkulátorról beszélünk, fontos ennek helyessége, ami szükséges 
+ Mivel egy kalkulátorról beszélünk, fontos ennek helyessége, ami szükséges 
 adatok beírásánál jelentkezik, mint például a magasság és súly megadása. Ezeknél pedig 
 elengedhetetlen hibás adat megadása, tehát nem adhatunk meg például szöveges adatot. 
 Ezért szükséges bizonyos függvények bevezetése, amelyek ellenőrzik a beírt adatok 
 helyességét.
--használhatóság: Egy olyan program kidolgozására van szükség, ami könnyedén használható 
+ Egy olyan program kidolgozására van szükség, ami könnyedén használható 
 bárhol és bármikor. Tehát egy mindennapokban használt eszközre fejlesztjük, ami nem más 
 mint a mobiltelefon. A mobiltelefon manapság már egy elengedhetetlen eszköz, hiszen 
 vezeték nélküli kapcsolódás nélkül lehet használni bármikor, és bárhol illetve azonnali 
 kiértékelést nyújt a kliens számára.
--megbízhatóság: Bármilyen szoftvernél fontos a megbízhatóság. Egy kalkulátornál a pontos 
+ Bármilyen szoftvernél fontos a megbízhatóság. Egy kalkulátornál a pontos 
 számításban jelenik meg, illetve a helyes kiértékelésnél. Ezért fontos a képlet, illetve 
 a pontos számolás bevezetése a programban. E mellett pedig a kiértékelés megbízhatóságára 
 is törekednünk kell, ami nemtől, kortól és a kiszámolt BMI indextől függ.
--hordozhatóság: Olyan rendszert kívánunk létrehozni, amely biztosítja, 
+ Olyan rendszert kívánunk létrehozni, amely biztosítja, 
 hogy bárhol, bármikor ellenőrizhessük, hogy a súlyunk egészséges 
 tartományban van-e. Ezt Android eszközökre történő fejlesztéssel a 
 legkézenfekvőbb megvalósítani, biztosítva a lokációhoz történő nyelvi 
 alkalmazkodást.
--hatékonyság: Fontos, hogy a program gyors kiértékelést mutasson, és 
+ Fontos, hogy a program gyors kiértékelést mutasson, és 
 ne csupán egy számot jelenítsen meg, hanem a BMI index értékével 
 visszatérő függvényre épüljön egy azt kiértékelő függvény is.
--újrahasznosíthatóság: Olyan program fejlesztése a célunk, amelynek 
+ Olyan program fejlesztése a célunk, amelynek 
 a kódját később akár webes, vagy egyéb felületen is fel lehet használni 
 részben vagy egészben. Ezért választottuk Kotlin nyelv helyett a 
 Java-t az applikáció logikájának megvalósításához.
--kompatibilitás: A tervezett redszer Android 6.0 (Marshmallow) 
+ A tervezett redszer Android 6.0 (Marshmallow) 
 rendszert használó eszközökkel lesz kompatibilis, egyéb rendszer-
 követelmények nem állnak fent.
--elérhetőség: a rendszer Play áruázban lesz ingyenesen elérhető
+ A rendszer Play áruázban lesz ingyenesen elérhető
 reklámokkal, fizetős szolgáltatásként ezek eltávolíthatóak lesznek.
 
 4. Jelenlegi folyamatok
--használhatóság: Nagyon kevés embert foglalkoztat a BMI index kiszámolása, 
+ Nagyon kevés embert foglalkoztat a BMI index kiszámolása, 
 ezért inkább hanyagolják az egészséges életmódót és a testsúly szabályozását. 
 Tehát egy kalkulátor megkönnyítené az emberek dolgát, és még időt is megspórolnak. 
 A mobiltelefon segítségével rövid időn belül eredménnyel tér vissza a szoftver.
--hordozhatóság: Jelenleg számológép és képlet (BMI=testsúly/testmagasság^2, 
+ Jelenleg számológép és képlet (BMI=testsúly/testmagasság^2, 
 kg/m^2) segítségével számolható ki objektív értékelés a testsúly 
 nyomonkövetésére.
--hatékonyság: Ennek olyan alacsony a hatékonysága, és maga a képlet 
+ Ennek olyan alacsony a hatékonysága, és maga a képlet 
 annyira szűk körben ismert, hogy az emberek nagyon kis százaléka 
 használja a folyamatot. Akik pedig ismerik a kiszámítás módját, 
 ők általában BMI index jelentésével is tisztában vannak.
--kompatibilitás: A jelenlegi a BMI értéket kiszámító eljárás papírral,
+ A jelenlegi a BMI értéket kiszámító eljárás papírral,
 ceruzával és számológéppel kompatibilis.
 
 5. Igényelt üzleti feladatok
--helyesség: Nem megengedett a hibás adatok beírása, ezért bizonyos függvények
+ Nem megengedett a hibás adatok beírása, ezért bizonyos függvények
 bevezetésére lesz szükség, ami ellenőrzi az adatok helyességét.
--használhatóság: Könnyen használható szoftver szükséges, ami bármikor, bárhol 
+ Könnyen használható szoftver szükséges, ami bármikor, bárhol 
 használható, és pontos információkkal szolgál, a kiegyensúlyozott életmódhoz, 
 ezért Androidos operációs rendszerre fejlesztjük.
--hordozhatóság: Fel kell készülnünk arra, hogy globálisan minél 
+ Fel kell készülnünk arra, hogy globálisan minél 
 szélesebb körben tegyük elérhetővé az alkalmazást. Ehhez a 
 nyelvterületenként változó szövegeket egy Strings.xml file-ban fogjuk 
 tárolni, és onnan előhívni az Android eszköz nyelvi beállításaitól 
 függően.
--hatékonyság: Intuitív felhasználói felület létrehozása elengedhetetlen, 
+ Intuitív felhasználói felület létrehozása elengedhetetlen, 
 hogy minél egyszerűbben és gyorsabban adjon a program értékelhető 
 eredményt. Ehhez RadioGroup-ra és EditText Fieldekre lesz szükség, 
 esetleg segítő szöveggel ellátva.
--újrahasznosíthatóság: Olyan programkód megírása a célunk, amely könnyen 
+ Olyan programkód megírása a célunk, amely könnyen 
 értelmezhető és egy újabb programban könnyen újrahasznosítható. Ennek 
 érdekében jól olvasható, megfelelő megjegyzésekkel ellátott, rendezett 
 programkód megírása a célunk. Az applikáció logikáját Java nyelven 
 fejlesztjük majd Kotlin helyett ebből a célból.
--karbantarthatóság: A rendszer egyszerűsége miatt a kész terméket nem kell
+ A rendszer egyszerűsége miatt a kész terméket nem kell
 módosítani, esetleges igény szerint viszont bővíthető lesz.
--hibatűrés: A program figyelmeztet az üresen hagyott mezőkre ezzel figyelmeztetve az adott felhasználót, hogy minden bekért adatot adjunk meg. Továbbá az adatokat a lehető legpontosabban vigyük fel a rendszerbe, mert így a program a lehető legpontosabb értékelést tudja adni a felhasználóknak. Az adatok felvitelekor a program ellenőrzi azokat, hogy egy bizonyos értékhatáron belül legyenek.
--bővíthetőség: A program jelenleg csak a testtömeg indexet mutatja. A program tovább fejleszthető a következő módon: A program a kiszámolt adatokkal tovább dolgozhat, a felhasználóknak további tippeket, trükköket adhat, hogy a program használója minél egészségesebb legyen. Például akiknek az indexük magas, azoknak értesítéseket küldeni, hogy a nap folyamán tornázzon. Az étkezés ütemezésében is segíthet, mivel az elhízások egyik fő forrása a rendszertelen étkezés is.
+ A program figyelmeztet az üresen hagyott mezőkre ezzel figyelmeztetve az adott felhasználót, hogy minden bekért adatot adjunk meg. Továbbá az adatokat a lehető legpontosabban vigyük fel a rendszerbe, mert így a program a lehető legpontosabb értékelést tudja adni a felhasználóknak. Az adatok felvitelekor a program ellenőrzi azokat, hogy egy bizonyos értékhatáron belül legyenek.
+ A program jelenleg csak a testtömeg indexet mutatja. A program tovább fejleszthető a következő módon: A program a kiszámolt adatokkal tovább dolgozhat, a felhasználóknak további tippeket, trükköket adhat, hogy a program használója minél egészségesebb legyen. Például akiknek az indexük magas, azoknak értesítéseket küldeni, hogy a nap folyamán tornázzon. Az étkezés ütemezésében is segíthet, mivel az elhízások egyik fő forrása a rendszertelen étkezés is.
