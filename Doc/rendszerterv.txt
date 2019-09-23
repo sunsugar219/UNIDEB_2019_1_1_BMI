@@ -22,6 +22,8 @@ Hódi Zsuzsa : projekt összeállítása, resource kezelés, hordozhatóság
 Projekt tervezése: szeptember 23.
 Projekt összeállítása: szeptember 24.
 Resource kezelés : szeptember 25.
+BMI-érték kiírása: szeptember 26.
+Tipp kiírása: szeptember 27.
 Hordozhatóság: szeptember 29.
 -Mérföldkövek:
 Projektterv elkészítése
