@@ -7,7 +7,9 @@ fontosságú, hogy külön figyelmet fordítsunk az egészséges életmódra.
 Ennek része az is, hogy a súlyunkat folyamatosan ellenőrizzük, és megelőzzük
 az elhízást. Ennek nyomon követésére szolgál a BMI kalkulátorunk, amely 
 a nem, magasság és súly paraméterek alapján kiszámolja és kiértékeli a 
-felhasználó BMI indexét egy Android alkalmazásban.
+felhasználó BMI indexét egy Android alkalmazásban. Ehhez szükség van 
+intuitív felhasználói felületre, hibabiztos üzleti logikára és megfelelően
+összeállított projektre.
 
 Projekt terv
 -Projektszerepkörök, felelősségek:
@@ -58,14 +60,21 @@ alapján kiszámított BMI indexről, és az ahhoz tartozó röviden megfogalmaz
 véleményről.
 
 Követelmények
--Funkcionális követelmények
--Nem  funkcionális követelmények
--Törvényi előírások, szabványok
+-Funkcionális követelmények: funkcionálisan azt várjuk az applikációtól, 
+hogy helyesen megadott paraméterek alapján kiszámolja a BMI indexet,
+és ahhoz kiértékelést társítson. 
+-Nem  funkcionális követelmények: szükséges, hogy valódi értékek esetén 
+számoljon csak eredményt, egyéb esetben a bevitt érték átgondolására 
+kérjük a felhasználót. 
+Fontos, hogy több méretű Android eszközön fusson az applikáció.
+Fontos, hogy ha csupán magyar nyelvű környezetre írjuk, akkor is könnyen
+biztosítható legyen a többnyelvűség.
+-Törvényi előírások, szabványok: mivel a felhasználó adatait nem tároljuk,
+ezért külön törvényi előírást nem kell figyelembe vennünk.
 
 Funkcionális terv
--Rendszerszereplők
--Rendszerhasználati esetek és lefutásaik
--HatárosztályokoMenü-hierarchiák
+-Határosztály: ActivityMain.java osztályon belül oldjuk meg a felhasználói 
+felülettel történő kapcsolatot, az értékek beolvasását és kiértékelését.
 -Képernyőtervek: A felhasználói felületet egyszerűen, átláthatóan kívánom
 megoldani.A program nem követel bonyolultabb felhasználó felületet.
 A képernyőt két részre kívánom osztani.Az első felében az adatok bevitele, 
@@ -76,15 +85,18 @@ Ezek az adatok bevitele után a SZÁMOL gombra kattintva a porgram kiítja a ké
 az eredményt.Csatolt képen megtekinthető a felhasználó felület terve(BMI_UI_kepepernyoterv.jpg).
 
 Fizikai környezet
--Vásárolt softwarekomponensek és külső rendszerek
--Hardver és hálózati topológia: Android 6 a minimális elvárt Android verzió az eszközökön (SDK 21)
--Fizikai alrendszerek
--Fejlesztő eszközök: Android Studio 3.5
--Keretrendszer (pl. Spring)
+-Vásárolt softwarekomponensek és külső rendszerek: Picasso library használata 
+szükséges lehet, amennyiben a háttérképet online tárolóból töltjük be.
+-Hardver és hálózati topológia: Android 5 a minimális elvárt Android 
+verzió az eszközökön (SDK 21)
+-Fejlesztő eszközök: Android Studio 3.5, programozási nyelv: Java
 
 Absztrakt domain modell
--Domain specifikáció, fogalmak
--Absztrakt komponensek, ezek kapcsolatai
+MainActivity osztály biztosítja a felhasználói felületet, ezen belül találjuk a nézeteket.
+EditText mezők beolvassák a súlyt és a magasságot, mely alapján a BMI index kiszámítódik.
+A BMI index tartományait kijelöljük a felhasználó nemét is figyelembe véve,
+és ezek alapján visszaadjuk azt a szöveget, amelyet már a felhasználó is tud értelmezni.
+Ez jelenik majd meg egy TextView mezőben.
 
 Architekturális terv
 -Egy architekturális tervezési minta:3-rétegű alkalmazás az adatbázis réteg nélkül 
