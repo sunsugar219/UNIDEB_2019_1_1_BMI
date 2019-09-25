@@ -1,3 +1,62 @@
 <resources>
-    <string name="app_name">BMI Project</string>
+    <string name="app_name" translatable="false">BMI Project</string>
+
+    <!--underweight texts-->
+    <string name="below_a">Mozogj többet, így nő az étvágy, de az egészség megmarad.</string>
+    <string name="below_b">Kalóriadúsabb ételek segíthetnek: dió, mogyoró, és házi chips.</string>
+    <string name="below_c">Edzés mellett tömegnövelő is hasznos lehet.</string>
+    <string name="below_d">Multivitaminok is hízlalhatnak, arra vigyázz, hogy a plusz súly ne zsír legyen.</string>
+    <string name="below_e">Gyors ételek, nasik és elalvás előtt kevesebb, mint 2 órával evés is hízlalnak,
+        de ezek egészségtelen szokások.</string>
+    <string name="below_f">Orvos, dietetikus vagy edző mindig tud segíteni.</string>
+    <string name="below_tips_a">Alultáplált vagy. Cél súly minimum:  </string>
+    <string name="below_tips_b" translatable="false">kg.</string>
+
+    <!--normal texts-->
+    <string name="normal_a">A súlyod tökéletes, ne aggódj miatta. Megjelenésen a mozgás segíthet.</string>
+    <string name="normal_b">Jól nézel ki. Csak így tovább.</string>
+    <string name="normal_c">Fogyókúrára még csak ne is gondolj.</string>
+    <string name="normal_d">Te vagy a legjobb.</string>
+    <string name="normal_e">Légy magaddal elégedett.</string>
+    <string name="normal_f">Ha nem tetszik amit látsz, annak lelki oka van.</string>
+    <string name="normal_tips_a">Egészséges vagy. Ha fogyni akarsz, ez alá ne menj: </string>
+    <string name="normal_tips_b" translatable="false">kg.</string>
+
+    <!--overweight texts-->
+    <string name="over_a">Kisebb adagokat egyél, vagy kevesebb szénhidrátot.</string>
+    <string name="over_b">Fokozatosan mozogj egyre többet. És adj időt magadnak</string>
+    <string name="over_c">Kitartás nélkül nincs siker. Folytasd az edzést</string>
+    <string name="over_d">Vannak hetek, amikor a mérleg nem mutat változást. Akkor se add fel.</string>
+    <string name="over_e">Reális célokat tűzz ki, és azokat mindig érd is el.</string>
+    <string name="over_f">Orvos vagy dietetikus tanácsára is fontos lehet.</string>
+    <string name="over_tips_a">Túlsúlyos vagy. Cél súlyod legfeljebb:  </string>
+    <string name="over_tips_b" translatable="false">kg.</string>
+
+    <!--extremely overweight texts-->
+    <string name="e_over_a">Sétálj minél többet.</string>
+    <string name="e_over_b">Igyál sok vizet, vagy ízesítetlen zöld teát.</string>
+    <string name="e_over_c">Egyél sok zöldséget és levest, és lehetőleg minimális szénhidrátot.</string>
+    <string name="e_over_d">Ne ess túlzásba. Adj időt magadnak.</string>
+    <string name="e_over_e">Új életmódra van szükséged, ami mellett ki tudsz tartani.</string>
+    <string name="e_over_f">Orvos, dietetikus és személyi edző tanácsát is hallgasd meg.</string>
+    <string name="e_over_tips_a">Extrém túlsúlyos vagy. Próbálj kezdetben </string>
+    <string name="e_over_tips_b">kg-ra fogyni, majd néhány hónap/év múlva </string>
+    <string name="e_over_tips_c">kg-ra.</string>
+
+    <!--checks-->
+    <string name="check_age">Tényleg ennyi idős vagy?</string>
+    <string name="check_weight">Tényleg ez a súlyod?</string>
+    <string name="check_height">Tényleg ilyen magas vagy?</string>
+
+    <string name="bmi_index" translatable="false">BMI Index: </string>
+
+    <!-- layout texts-->
+    <string name="sex">Nem: </string>
+    <string name="male">Férfi</string>
+    <string name="female">Nő</string>
+    <string name="age">Életkor: </string>
+    <string name="height">Magasság (cm): </string>
+    <string name="weight">Súly (kg): </string>
+    <string name="count">Számol</string>
+
 </resources>
