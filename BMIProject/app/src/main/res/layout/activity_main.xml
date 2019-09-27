@@ -125,7 +125,21 @@
                 android:textAllCaps="true"
                 android:onClick="count"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text=""
+                android:gravity="center_vertical"
+                android:textColor="#ff0000"
+                android:id="@+id/bmi_index"/>
 
+            <TextView
+                android:id="@+id/tips_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="" />
 
 
 
