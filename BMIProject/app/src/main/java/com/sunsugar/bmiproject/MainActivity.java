@@ -19,11 +19,40 @@ public class MainActivity extends AppCompatActivity {
     float weightInt = 1;
     String ideal;
     TextView suggestions;
+	TextView mIndex;
+    private static final String KEY_TIPS_VALUE = "tipsValue";
+    private static final String KEY_BMI_VALUE = "bmiValue";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+		
+		
+	public void radioOne(View view) {
+       //Is the button now checked?
+		boolean checkedOne = ((RadioButton) view).isChecked();
+
+        //Check which RadioButton was clicked
+        switch (view.getId()) {
+            case R.id.radio_man:
+                if (checkedOne) {
+                    sex = 0;
+                    sex++;
+                }
+                break;
+
+
+            case R.id.radio_woman:
+                if (checkedOne) {
+                    sex = 0;
+                    sex = sex + 2;
+                }
+                break;
+        }
+	}
+	
+
         //gyerekek bmi-je
 
 
