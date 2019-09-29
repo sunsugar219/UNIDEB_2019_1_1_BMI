@@ -141,7 +141,11 @@
                 android:textSize="15sp"
                 android:text="" />
 
-
+            <ImageView
+                android:id="@+id/cdc_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"/>
 
         </LinearLayout>
     </ScrollView>
