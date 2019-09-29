@@ -74,7 +74,20 @@ public class MainActivity extends AppCompatActivity {
 	
 
         //gyerekek bmi-je
-
+		
+		if (age<=20 && sex==1) {
+			tips = " ";
+			image.setVisibility(View.VISIBLE);
+			image.setImageresource(R.drawable.boys);
+		}
+		
+		if (age<=20 && sex==2) {
+			tips = " ";
+			image.setVisibility(View.VISIBLE);
+			image.setImageresource(R.drawable.girls);
+		}
+		
+		suggestions = (TextView) findViewById(R.id.tips_text);
 
         //nők bmi-je
         ImageView image = null;
