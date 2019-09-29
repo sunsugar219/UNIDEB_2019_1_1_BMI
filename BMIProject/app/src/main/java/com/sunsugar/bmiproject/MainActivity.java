@@ -52,6 +52,26 @@ public class MainActivity extends AppCompatActivity {
         }
 	}
 	
+		//hibák
+
+            if (age > 150 || age == 0) {
+                String messageA = getResources().getString(R.string.check_age);
+                Toast.makeText(this, messageA, Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            if (heightInt < 50 || heightInt > 300) {
+                String messageB = getResources().getString(R.string.check_height);
+                Toast.makeText(this, messageB, Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            if (weightInt < 3 || weightInt > 700) {
+                String messageC = getResources().getString(R.string.check_weight);
+                Toast.makeText(this, messageC, Toast.LENGTH_LONG).show();
+                return;
+            }
+	
 
         //gyerekek bmi-je
 
