@@ -155,10 +155,23 @@ funkció, amivel megtörténik az adatok beolvasása és megtörténik a kiért�
 
 
 Tesztterv
-Az üzleti logika nem igényel komolyabb tesztelést, két a logika két részét kell tesztelni, az egyik
+- Sikeres projekt létrehozás tesztje: hiba nélkül fusson az applikáció Android eszközön.
+- Felhasználói felület tesztelése: az általunk megtervezett felhasználói felület 
+az eszközön is úgy nézzen ki, mint terveztük.
+- Felhasználói felület elemeinek működési tesztje: az elvárt módon viselkedjenek az elemek.
+- Változók beolvasásának tesztje: minden bevitt értéket olvasson az alkalmazás.
+- Nem alkalmazható változók beolvasásának kiszűrési tesztje: a felhasználó ne adhasson
+meg valótlan adatot. 
+- BMI index számításának tesztje: minden esetben a manuálisan számított értéket írja 
+ki az applikáció.
+- BMI index kiértékelési tesztje: a megfelelő string resource csoportból adjon eredményt.
+- Lokációs adaptáció tesztje: angol nyelvű beállításokkal is működjön megfelelően.
+- Dimenziós adaptáció tesztje: más méretekkel rendelkező Android eszközön is megfelelően 
+fusson az alkalmazás, a felhasználói felület torzulása nélkül.
+Az üzleti logika nem igényel komolyabb tesztelést, a logika két részét kell tesztelni, az egyik
 a BMI-indexet kiszámító algoritmus tesztje, a másik pedig a bmi-értékhez hozzárendelt szöveget teszteli.
 Telepítési terv
-A telepítés az android beépített csomagtelepítővel történik
+A telepítés az Android beépített csomagtelepítővel történik
 Karbantartási terv
 A program karbantartást nem igényel, legfeljebb újabb android verziókkal való kompatibilitási problémák
 merülhetnek fel, azok megoldása szükséges.
