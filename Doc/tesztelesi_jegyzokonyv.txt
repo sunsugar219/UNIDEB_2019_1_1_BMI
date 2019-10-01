@@ -1,0 +1,20 @@
+Tesztelési jegyzőkönyv
+BMI projekt
+
+- Sikeres projekt létrehozás tesztje: hiba nélkül fut az applikáció 
+Android eszközön.
+- Felhasználói felület tesztelése: az általunk megtervezett 
+felhasználói felület a terveknek megfelelő megjelenéssel rendelkezik.
+- Felhasználói felület elemeinek működési tesztje: gomb, EditText mezők, 
+RadioGroup, TextView az elvártnak megfelelően működik.
+- Változók beolvasásának tesztje: minden bevitt értéket olvas az alkalmazás.
+- Nem alkalmazható változók beolvasásának kiszűrési tesztje: a felhasználó 
+nem tud megadni valótlan adatot.
+- BMI index számításának tesztje: az applikáció minden esetben a 
+manuálisan számított értéket írja ki.
+- BMI index kiértékelési tesztje: a megfelelő string resource csoportból
+ ír ki véletlenszerű eredményt.
+- Lokációs adaptáció tesztje: angol nyelvű beállításokkal is megfelelően 
+működik minden mező.
+- Dimenziós adaptáció tesztje: Android tableten is megfelelően fut az alkalmazás, 
+a felhasználói felület nem torzul.
